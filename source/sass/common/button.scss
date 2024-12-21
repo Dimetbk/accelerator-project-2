@@ -1,0 +1,45 @@
+.button {
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+  border: none;
+  padding: 8px 20px;
+  line-height: 1.5;
+  text-align: center;
+  font-family: $font-family;
+  color: #2f0269;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #2f32cc;
+    outline: none;
+  }
+
+  &:active {
+    background-color: #7a0c3f;
+  }
+}
+
+.button--white {
+  color: #df1774;
+  background-color: #d6bc26;
+
+  &:hover,
+  &:focus {
+    color: #153609;
+    background-color: #10dfee;
+    outline: none;
+  }
+
+  &:active {
+    background-color: #9cd880;
+    color: #d1a104;
+  }
+
+  &:default {
+    background-color: #210546;
+    color: #fa0a0a;
+  }
+}

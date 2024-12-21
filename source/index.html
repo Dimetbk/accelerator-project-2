@@ -40,8 +40,77 @@
   <svg>
     <use href="/__spritemap#sprite-user"></use>
   </svg> -->
-  <!-- примеры требуемых атрибутов data-test="*" -->
-  <div data-test="header">header</div>
+  <header class="header" data-test="header">
+    <div class="header__wrapper">
+      <nav class="header-nav">
+        <div class="header__burger-menu">
+          <button class="header-nav__toggle js-toggle-button" type="button" value="Меню сайта">
+            <span class="visually-hidden">
+              Открыть меню
+            </span>
+          </button>
+        </div>
+        <div class="header__logo-container">
+          <div class="header__logo-image">
+            <svg>
+              <use href="/__spritemap#sprite-logotype"></use>
+            </svg>
+          </div>
+          <ul class="header-nav__list site-list site-list--active">
+            <li class="site-list__item site-list__item--presence">
+              <a class="site-list__make" href="#">
+                Туры
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__make" href="#">
+                Обучение
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__make" href="#">
+                О нас
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__make" href="#">
+                Отзывы
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__make" href="#">
+                Фотографии
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__make" href="#">
+                Контакты
+              </a>
+            </li>
+          </ul>
+          <div class="header__logo-phone">
+            <a href="tel:+78000000000">
+              8 800 000-00-00
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--<div class="header__container">
+      <nav class="header-nav header-nav--closed header-nav--nojs">
+        <div class="header__list">
+          <div class="header__item">
+            <svg>
+              <use href="/__spritemap#sprite-burger"></use>
+            </svg>
+          </div>
+          <div class="header__item">
+
+          </div>
+        </div>
+      </nav>
+    </div> -->
+  </header>
   <div data-test="hero">hero</div>
   <div data-test="tours">tours</div>
   <div data-test="training">training</div>

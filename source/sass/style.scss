@@ -1,4 +1,12 @@
-// Vendor
-// ---------------------------------
+@import "common/variables.scss";
+//@import "common/global.scss";
+@import "common/fonts.scss";
+@import "common/visually-hidden.scss";
+@import "common/button.scss";
+//@import "common/checkbox.scss";
+//@import "common/radio.scss";
 
-@import "vendor/normalize";
+@import "blocks/header.scss";
+@import "blocks/site.scss";
+
+@import "vendor/normalize.scss";
