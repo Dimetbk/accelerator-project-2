@@ -1,6 +1,5 @@
 .header {
   background-color: $colour-button-main;
-  font-family: $font-family;
 }
 
 .header__wrapper {
@@ -126,7 +125,6 @@
 .header__logo-phone a {
   text-decoration: none;
   color: $colour-text-white;
-  font-family: $font-family;
   font-weight: 600;
   font-size: 14px;
   line-height: 1;

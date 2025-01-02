@@ -1,8 +1,9 @@
 @import "common/variables.scss";
-//@import "common/global.scss";
+@import "common/global.scss";
 @import "common/fonts.scss";
 @import "common/visually-hidden.scss";
 @import "common/button.scss";
+
 //@import "common/checkbox.scss";
 //@import "common/radio.scss";
 
@@ -10,4 +11,4 @@
 @import "blocks/site.scss";
 @import "blocks/hero.scss";
 
-@import "vendor/normalize.scss";
+//@import "vendor/normalize.scss";
