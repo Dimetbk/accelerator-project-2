@@ -17,8 +17,6 @@
     crossorigin="anonymous">
   <link rel="preload" href="/fonts/montserrat-v26-cyrillic_latin-800.woff2" type="font/woff2" as="font"
     crossorigin="anonymous">
-
-
   <link rel="stylesheet" href="sass/style.scss">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
@@ -29,14 +27,9 @@
 </head>
 
 <body class="page-body">
-  <!-- пример использования спрайта
-  <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-  <svg>
-    <use href="/__spritemap#sprite-user"></use>
-  </svg> -->
   <header class="header" data-test="header">
     <div class="header__wrapper">
-      <nav class="header-nav">
+      <nav class="header-nav header-nav--closed">
         <div class="header__burger-menu">
           <button class="header-nav__toggle js-toggle-button" type="button" value="Меню сайта">
             <span class="visually-hidden">
@@ -50,38 +43,40 @@
               <use href="/__spritemap#sprite-logotype"></use>
             </svg>
           </div>
-          <ul class="header-nav__list site-list site-list--active">
-            <li class="site-list__item site-list__item--presence">
-              <a class="site-list__make" href="#">
-                Туры
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__make" href="#">
-                Обучение
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__make" href="#">
-                О нас
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__make" href="#">
-                Отзывы
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__make" href="#">
-                Фотографии
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__make" href="#">
-                Контакты
-              </a>
-            </li>
-          </ul>
+          <div class="header-nav__wrapper">
+            <ul class="header-nav__list site-list site-list--active">
+              <li class="site-list__item site-list__item--presence">
+                <a class="site-list__make" href="#">
+                  Туры
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__make" href="#">
+                  Обучение
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__make" href="#">
+                  О нас
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__make" href="#">
+                  Отзывы
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__make" href="#">
+                  Фотографии
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__make" href="#">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </div>
           <div class="header__logo-phone">
             <a href="tel:+78000000000">
               8 800 000-00-00
@@ -113,19 +108,51 @@
               width="320" height="568" alt="Изображение вершин Кавказа.">
           </picture>
         </div>
-        <div class="hero__box-text">
-          <h1 class="visually-hidden">
-            Наши предложения.
-          </h1>
-          <h2>
-            Захватывающие вершины Кавказа
-          </h2>
-          <p>
-            В&nbsp;сопровождении опытных гидов вы&nbsp;пройдёте через потрясающие<br />
-            ландшафты и&nbsp;совершите восход на&nbsp;вершину горы Чегет.
-          </p>
+        <div class="hero__box-content">
+          <div class="hero__box-text">
+            <h1 class="visually-hidden">
+              Наши предложения.
+            </h1>
+            <h2>
+              Захватывающие вершины Кавказа
+            </h2>
+            <p>
+              В&nbsp;сопровождении опытных гидов вы&nbsp;пройдёте через&nbsp;потрясающие ландшафты и&nbsp;совершите
+              восход
+              на&nbsp;вершину горы Чегет.
+            </p>
+            <a class="hero__box-button" href="#">
+              Смотреть тур
+            </a>
+          </div>
         </div>
-
+        <div class="hero__pagination">
+          <div class="hero__buttons">
+            <div class="hero__button">
+              <svg>
+                <use href="/__spritemap#sprite-moon"></use>
+              </svg>
+              6 дней/5 ночей
+            </div>
+            <div class="hero__button">
+              <svg>
+                <use href="/__spritemap#sprite-level"></use>
+              </svg>
+              Высокая сложность
+            </div>
+          </div>
+          <div class="hero__bullets">
+            <button class="hero__bullet hero__bullet--active" type="button" value="Слайд">
+              <span class="visually-hidden">Слайд</span>
+            </button>
+            <button class="hero__bullet" type="button" value="Слайд">
+              <span class="visually-hidden">Слайд</span>
+            </button>
+            <button class="hero__bullet" type="button" value="Слайд">
+              <span class="visually-hidden">Слайд</span>
+            </button>
+          </div>
+        </div>
       </div>
     </section>
     <div data-test="tours">tours</div>
