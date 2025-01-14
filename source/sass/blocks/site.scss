@@ -29,6 +29,28 @@
   text-transform: uppercase;
   cursor: pointer;
 
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:focus {
+    border: 1px solid;
+  }
+
+  &:focus-within {
+    outline: none;
+  }
+
+  &:active {
+    color: $colour-overlay-slider;
+    text-decoration: none;
+  }
+
+  &:disabled {
+    color: #999999;
+  }
+
+
   @media (min-width: $tablet-width) {
     font-size: 16px;
   }
